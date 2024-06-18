@@ -231,15 +231,15 @@ const Index = () => {
   });
 
   const showInviteToAnswer = question?.id;
-  let canInvitePeople = false;
-  if (showInviteToAnswer && Array.isArray(question.extends_actions)) {
-    const inviteAct = question.extends_actions.find((op) => {
-      return op.action === 'invite_other_to_answer';
-    });
-    if (inviteAct) {
-      canInvitePeople = true;
-    }
-  }
+  const canInvitePeople = false;
+  // if (showInviteToAnswer && Array.isArray(question.extends_actions)) {
+  //   const inviteAct = question.extends_actions.find((op) => {
+  //     return op.action === 'invite_other_to_answer';
+  //   });
+  //   if (inviteAct) {
+  //     canInvitePeople = true;
+  //   }
+  // }
 
   return (
     <Row className="questionDetailPage pt-4 mb-5">

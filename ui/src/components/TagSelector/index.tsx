@@ -330,7 +330,7 @@ const TagSelector: FC<IProps> = ({
         `width:${ele.offsetWidth + 16}px`,
       );
     } else {
-      inputRef.current?.setAttribute('style', 'width: 60px');
+      inputRef.current?.setAttribute('style', 'width: 80px');
     }
   }, [searchValue]);
 
@@ -371,7 +371,7 @@ const TagSelector: FC<IProps> = ({
               <Form.Control
                 // autoFocus
                 autoComplete="off"
-                style={{ width: '60px' }}
+                style={{ width: '80px' }}
                 ref={inputRef}
                 className="a-input m-1"
                 placeholder={t('add_btn')}
@@ -382,7 +382,7 @@ const TagSelector: FC<IProps> = ({
               <Form.Control
                 autoComplete="off"
                 className="a-input"
-                style={{ width: '60px', position: 'absolute', zIndex: -1 }}
+                style={{ width: '80px', position: 'absolute', zIndex: -1 }}
                 autoFocus
               />
             )}

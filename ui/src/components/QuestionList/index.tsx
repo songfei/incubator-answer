@@ -70,11 +70,11 @@ const QuestionList: FC<Props> = ({
   return (
     <div>
       <div className="mb-3 d-flex flex-wrap justify-content-between">
-        <h5 className="fs-5 text-nowrap mb-3 mb-md-0">
+        <h3 className="text-nowrap mb-4 mb-md-0">
           {source === 'questions'
             ? t('all_questions')
             : t('x_questions', { count })}
-        </h5>
+        </h3>
         <QueryGroup
           data={QUESTION_ORDER_KEYS}
           currentSort={curOrder}
